@@ -2,6 +2,7 @@ body {
 	font-family: 'Merienda', cursive;
 	background-image: url(images/bg.jpg);
 }
+
 #wrap{
 	position: absolute;
 	background: url(images/wood.jpg);

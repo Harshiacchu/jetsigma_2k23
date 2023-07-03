@@ -1,21 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Monoton|Muli:400,400i,500,500i,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Anton|Monoton|Muli:400,400i,500,500i,600&display=swap");
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_extend.scss */
-
-
-
-/* .head img{
-  width:50%;
-  height:80px;
-  left:0;
-  margin-left: 100px;
-  position:center;
-  color: white; 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-} */
-
-
 .flex-center-start {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -983,6 +968,7 @@ h3 {
   left: 0;
   right: 0;
   width: 100%;
+  top: 0;
   z-index: 99;
   position: absolute;
 }
@@ -1036,15 +1022,13 @@ h3 {
 }
 
 /* line 32, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
-/* .header-area .main-header-area .logo-img {
-  left:0;
-  position:abds
-  
-} */
+.header-area .main-header-area .logo-img {
+  text-align: center;
+}
 
 @media (max-width: 767px) {
   /* line 32, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
-  .header-area .main-header-area .logo {
+  .header-area .main-header-area .logo-img {
     text-align: left;
   }
 }
@@ -1054,8 +1038,6 @@ h3 {
   .header-area .main-header-area .logo-img {
     text-align: left;
   }
-  
-  
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -1068,7 +1050,7 @@ h3 {
 @media (max-width: 767px) {
   /* line 46, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
   .header-area .main-header-area .logo-img img {
-    width: 50%;
+    width: 70px;
   }
 }
 
@@ -1496,18 +1478,17 @@ h3 {
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url("https://erudera.com/media/images/mathematics.original.jpg");
+  background-image: url(../img/banner/banner.png);
 }
 
 /* line 4, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
-/* .slider_bg_2 {
+.slider_bg_2 {
   background-image: url(../img/banner/banner2.png);
-} */
+}
 
 /* line 7, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area {
-  position: inherit;
-  top:0;
+  position: relative;
   z-index: 0;
 }
 
@@ -1536,22 +1517,21 @@ h3 {
 /* line 21, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text {
   position: relative;
-  bottom:100px;
 }
 
 @media (max-width: 767px) {
   /* line 21, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
   .slider_area .single_slider .slider_text {
-    margin:2px;
+    margin: 150px 0 80px 0;
   }
 }
 
 /* line 26, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text .shape_2 {
   position: absolute;
-  left:0;
-  top: 0;
-  z-index: -2;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 @media (max-width: 767px) {
@@ -1573,8 +1553,8 @@ h3 {
 .slider_area .single_slider .slider_text .shape_1 {
   position: absolute;
   right: 0;
-  bottom: 0;
-  z-index: -2;
+  top: 0;
+  z-index: -1;
 }
 
 @media (max-width: 767px) {
@@ -2403,7 +2383,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_program_details.scss */
 .detials_bg_1 {
-  background-image: url("https://img.freepik.com/free-vector/elegant-hand-painted-alcohol-ink-background-with-gold-glitter_1048-16896.jpg?w=2000");
+  background-image: url(../img/program_details/details_banner.png);
 }
 
 /* line 4, ../../Arafath/CL/December/236. Event-02/HTML/scss/_program_details.scss */
