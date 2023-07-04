@@ -96,7 +96,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0;
+    margin-top: 0%;
     margin-bottom: .5rem
 }
 
@@ -629,7 +629,7 @@ pre code {
 .row {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    /* display: flex; */
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: -15px;
@@ -6874,7 +6874,7 @@ button.bg-dark:hover {
 .justify-content-center {
     -webkit-box-pack: center!important;
     -ms-flex-pack: center!important;
-    justify-content: center!important
+
 }
 
 .justify-content-between {
@@ -9268,6 +9268,225 @@ a.text-dark:hover {
         border: 1px solid #ddd!important
     }
 }
+.thumb{
 
+    margin-bottom: 85px;
+}
+/* .single_performer.wow.fadeInUp{
+    display: flex;
+} */
+rules{
+    position: absolute;
+    bottom: 50px;
+}
+.thumb:hover .Points{
+    visibility: visible ;
+    opacity: 1;
+    transition: .6s;
 
+}
+.Points{
+    visibility: hidden;
+    opacity: 0;
+    transition: .6s;
+}
+.desc{
+    visibility: visible;
+    opacity: 1;
+    transition: .6s;
+}
+.thumb:hover .desc{
+    visibility: hidden;
+    opacity: 0;
+    transition: .6s;
+}
+.thumb{
+    display: flex;
+    margin-bottom: 20px;
+}
+.performar_area .single_performer .performer_heading{
+    margin-top: 0 !important;
+}
+ul {
+    list-style-type: disc !important; /* Sets the bullet style to a filled circle */
+  }
+  
+  ul.custom-bullet {
+    list-style-type: none; /* Removes the default bullet style */
+  }
+  
+  ul.custom-bullet li:before {
+    content: "->"; /* Sets the bullet character */
+    color: red; /* Sets the color of the bullet */
+    margin-right: 8px; /* Adds some spacing between the bullet and the list item content */
+  }
+.unordered{
+    list-style-type: disc;
+}
+.footer_top.container.row.justify-content-center{
+    padding-left: 3000px;
+}
+@media (max-width: 767px) {
+    .thumb {
+      display: block;
+    }
+    .performer_heading{
+        margin-left: 0% !important;
+    }
+    .Points{
+        margin-bottom: 100px;
+    }
+    .Points h1{
+        margin-top: 10% !important;
+    }
+    .d-flex {
+        display: none !important;
+        display: -ms-flexbox!important;
+        display: block !important
+    }
+}
 /* # sourceMappingURL=bootstrap.min.css.map */
+.reg{
+    text-decoration: none;
+    font-weight: 400;
+    border: none;
+    color:red;
+}
+/* .row.justify-content-center{
+    padding-left: 359px;
+} */
+.footer_top.container.row{
+    align-content: center;
+}
+.img-card{
+    margin-top: 75px;
+    border: 1px solid aliceblue;
+    border-radius:30px ;
+    padding:20px;
+    box-shadow: white 0px 30px 60px -12px inset, aliceblue 0px 18px 36px -18px inset;
+}
+.btn {
+    --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+    --border-width: .125em;
+    --curve-size: .5em;
+    --blur: 30px;
+    --bg: #080312;
+    --color: #afffff;
+    color: var(--color);
+      /* use position: relative; so that BG is only for .btn */
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    padding: .5em 1.5em;
+    font-size: 17px;
+    border: 0;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+    clip-path: polygon(
+              /* Top-left */
+              0% var(--curve-size),
+  
+              var(--curve-size) 0,
+              /* top-right */
+              100% 0,
+              100% calc(100% - var(--curve-size)),
+  
+              /* bottom-right 1 */
+              calc(100% - var(--curve-size)) 100%,
+              /* bottom-right 2 */
+              0 100%);
+    transition: color 250ms;
+  }
+  
+  .btn::after,
+  .btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+  
+  .btn::before {
+    background: var(--border-color);
+    background-size: 300% 300%;
+    animation: move-bg7234 5s ease infinite;
+    z-index: -2;
+  }
+  
+  @keyframes move-bg7234 {
+    0% {
+      background-position: 31% 0%
+    }
+  
+    50% {
+      background-position: 70% 100%
+    }
+  
+    100% {
+      background-position: 31% 0%
+    }
+  }
+  
+  .btn::after {
+    background: var(--bg);
+    z-index: -1;
+    clip-path: polygon(
+              /* Top-left */
+              var(--border-width) 
+              calc(var(--curve-size) + var(--border-width) * .5),
+  
+              calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+  
+              /* top-right */
+              calc(100% - var(--border-width)) 
+              var(--border-width),
+  
+              calc(100% - var(--border-width)) 
+              calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+  
+              /* bottom-right 1 */
+              calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+              /* bottom-right 2 */
+              var(--border-width) calc(100% - var(--border-width)));
+    transition: clip-path 500ms;
+  }
+  
+  .btn:where(:hover, :focus)::after {
+    clip-path: polygon(
+                  /* Top-left */
+                  calc(100% - var(--border-width)) 
+  
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      
+                  calc(100% - var(--border-width))
+  
+                  var(--border-width),
+      
+                  /* top-right */
+                  calc(100% - var(--border-width))
+  
+                   var(--border-width),
+      
+                  calc(100% - var(--border-width)) 
+  
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+      
+                  /* bottom-right 1 */
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) 
+                  calc(100% - var(--border-width)),
+  
+                  /* bottom-right 2 */
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+                  calc(100% - var(--border-width)));
+    transition: 200ms;
+  }
+  
+  .btn:where(:hover, :focus) {
+    color: #fff;
+  }
+.Points h1{
+    margin-top: 17% !important;
+}
+.bro{
+    padding-top: 20px;
+}
