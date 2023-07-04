@@ -2058,6 +2058,10 @@ h3 {
   .bradcam_area .single_bradcam {
     padding: 150px 0;
   }
+  .blog_area .container .row{
+    max-width:100%;
+
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -5770,3 +5774,40 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.buttonn {
+  padding:10px;
+  position: relative;
+  font-size: 1.2em;
+  background-color: #BF0426;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5em;
+  color: #DEDEDE;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+.buttonn::before {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgba(150,4,31,1) 50%, rgba(191,4,38,1) 60%);
+  border-radius: 0 0 0.5em 0;
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  
+}
+
+.buttonn:hover::before {
+  width: 1.6em;
+  height: 1.6em;
+}
+
+.buttonn:active {
+  box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+  transform: translate(0.1em, 0.1em);
+}
